@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Projeto API</title>
+</head>
+<body>
+
+<h1>Consumindo API Pública</h1>
+
+<div id="resultado"></div>
+
+<script>
+fetch('https://jsonplaceholder.typicode.com/posts/1')
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById('resultado').innerHTML = `
+      <h2>${data.title}</h2>
+      <p>${data.body}</p>
+    `;
+  });
+</script>
+
+</body>
+</html>
