@@ -1,1 +1,1 @@
-# Entrega-Intermedi-ria
+# Entrega-Intermediaria
